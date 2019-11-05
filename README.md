@@ -2,6 +2,8 @@
 
 WIP Http related stuff.
 
+Uses `utils` from [Nipsuli/unison-utils](https://github.com/Nipsuli/unison-utils)
+
 Status:
 * HttpResponse -DONE
 * HttpRequest -WIP
