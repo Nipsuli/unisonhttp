@@ -100,6 +100,7 @@ HttpResponse.statusCodeReason = Map.fromList ([
   (507, "Insufficient Storage"),
   (508, "Loop Detected"),
   (509, "Bandwidth Limit Exceeded"),
-  (510, "Not Extended511 Network Authentication Required")
+  (510, "Not Extended"),
+  (511, "Network Authentication Required")
 ])
 ```
