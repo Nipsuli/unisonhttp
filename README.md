@@ -17,21 +17,35 @@ type HttpResponse = {
   headers: Map Text Text,
   body: Optional Text
 }
+
+type HttpRequest = {
+      method : HttpMethod,
+      path : .base.Text,
+      query : .base.Map .base.Text .base.Text,
+      headers : .base.Map .base.Text .base.Text,
+      body : .base.Optional .base.Text
+}
 ```
 
 Main functions:
 ``` Idris
 HttpResponse.toText : HttpResponse -> Text
 HttpResponse.fromText : Text -> Optional HttpResponse
+
+HttpRequest.toText : HttpRequest -> Text
+HttpRequest.fromText : Text -> Optional HttpRequest
 ```
 
 Utility functions:
 ``` Idris
 HttpResponse.statusCodeToReason : Nat -> Text
 headersToText : Map Text Text -> Text
+parseHttpMethod : Text -> Optional HttpMethod
 parseMessageHeaders : Text -> Map Text Text
+parsePath : Text -> Optional Text
+parseQuery : Text -> Map Text Text
 parseStatusCode : Text -> Optional Nat
-splitHttpHeaders : Text -> (Text, Text)
+queryToText : Map Text Text -> Text
 ```
 
 Mapped status codes:
