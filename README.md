@@ -7,7 +7,7 @@ Dependencies:
 
 Installation `pull https://github.com/Nipsuli/unisonhttp .http`
 
-Run example echo server with `ucm run .http.example.echo`
+Run example echo server with `ucm run .http.example.echo` and check http://localhost:8081/
 
 Status:
 * HttpResponse -DONE
