@@ -20,10 +20,10 @@ type HttpResponse = {
 
 type HttpRequest = {
   method : HttpMethod,
-  path : .base.Text,
-  query : .base.Map .base.Text .base.Text,
-  headers : .base.Map .base.Text .base.Text,
-  body : .base.Optional .base.Text
+  path : Text,
+  query : Map Text Text,
+  headers : Map Text Text,
+  body : Optional Text
 }
 ```
 
