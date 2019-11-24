@@ -3,7 +3,7 @@
 Simple HTTP server and client written in unison. I've tried to follow RFC 2616 on request and response parsing and creation as well as possible, but as this is first http implementation I've written, please let me know if there is something wrong. Also contributions are welcome :)
 
 Dependencies:
-* `utils` from [Nipsuli/unison-utils](https://github.com/Nipsuli/unison-utils) tl;dr: `pull https://github.com/Nipsuli/unison-utils .utils`
+* [`Nipsuli/unison-utils`](https://github.com/Nipsuli/unison-utils) tl;dr: `pull https://github.com/Nipsuli/unison-utils .utils`
 
 Installation `pull https://github.com/Nipsuli/unisonhttp .http`
 
