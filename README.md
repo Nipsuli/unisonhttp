@@ -30,14 +30,14 @@ type HttpRequest = {
 Main functions:
 ``` Idris
 HttpResponse.toText : HttpResponse -> Text
+HttpResponse.toBytes   : HttpResponse -> Bytes
 HttpResponse.fromText : Text -> Optional HttpResponse
 HttpResponse.fromBytes : Bytes -> Optional HttpResponse
-HttpResponse.toBytes   : HttpResponse -> Bytes
 
 HttpRequest.toText : HttpRequest -> Text
+HttpRequest.toBytes    : HttpRequest -> Bytes
 HttpRequest.fromText : Text -> Optional HttpRequest
 HttpRequest.fromBytes  : Bytes -> Optional HttpRequest
-HttpRequest.toBytes    : HttpRequest -> Bytes
 ```
 
 Utility functions:
