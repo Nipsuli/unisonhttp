@@ -1,14 +1,15 @@
 # unisonhttp
 
-WIP Http related stuff.
+Simple HTTP server and client written in unison. I've tried to follow RFC 2616 on request and response parsing and creation as well as possible, but as this is first http implementation I've written, please let me know if there is something wrong. Also contributions are welcome :)
 
-Uses `utils` from [Nipsuli/unison-utils](https://github.com/Nipsuli/unison-utils)
+Dependencies:
+* `utils` from [Nipsuli/unison-utils](https://github.com/Nipsuli/unison-utils)
 
 Status:
 * HttpResponse -DONE
 * HttpRequest -DONE
-* HttpServer -WIP
-* HttpClient -TODO
+* HttpServer -Simple server done, TODO: multi threaded server
+* HttpClient -WIP
 
 Types:
 ``` Idris
@@ -27,7 +28,18 @@ type HttpRequest = {
 }
 ```
 
-Main functions:
+Server:
+``` Idris
+simpleServer : Map Text Text -> (HttpRequest -> HttpResponse) -> '{io.IO} ()
+```
+
+The default values for the configuration Map are:
+``` Idris
+Map ["host", "port", "requestMaxSize"] ["0.0.0.0", "8081", "1024"]
+```
+
+
+Main request and response functions:
 ``` Idris
 HttpResponse.toText : HttpResponse -> Text
 HttpResponse.toBytes   : HttpResponse -> Bytes
