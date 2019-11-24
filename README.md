@@ -5,6 +5,10 @@ Simple HTTP server and client written in unison. I've tried to follow RFC 2616 o
 Dependencies:
 * `utils` from [Nipsuli/unison-utils](https://github.com/Nipsuli/unison-utils)
 
+Installation `pull https://github.com/Nipsuli/unisonhttp .http`
+
+Run example echo server with `ucm run .http.example.echo`
+
 Status:
 * HttpResponse -DONE
 * HttpRequest -DONE
