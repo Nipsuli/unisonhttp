@@ -13,7 +13,7 @@ Status:
 * HttpResponse -DONE
 * HttpRequest -DONE
 * HttpServer -Simple server done, TODO: multi threaded server
-* HttpClient -WIP
+* HttpClient -Simple client done, TODO: figure out ssl
 
 Types:
 ``` Idris
@@ -42,6 +42,15 @@ The default values for the configuration Map are:
 Map ["host", "port", "requestMaxSize"] ["0.0.0.0", "8081", "1024"]
 ```
 
+Client:
+``` Idris
+simpleRequest : Map Text Text -> HttpRequest -> {io.IO} Optional HttpResponse
+```
+Where the config Map is:
+``` Idris
+Map ["host", "port", "responsetMaxSize"] ["foo.bar.io", "80", "1024"]
+```
+Only host is required, other are optional.
 
 Main request and response functions:
 ``` Idris
