@@ -31,9 +31,13 @@ Main functions:
 ``` Idris
 HttpResponse.toText : HttpResponse -> Text
 HttpResponse.fromText : Text -> Optional HttpResponse
+HttpResponse.fromBytes : Bytes -> Optional HttpResponse
+HttpResponse.toBytes   : HttpResponse -> Bytes
 
 HttpRequest.toText : HttpRequest -> Text
 HttpRequest.fromText : Text -> Optional HttpRequest
+HttpRequest.fromBytes  : Bytes -> Optional HttpRequest
+HttpRequest.toBytes    : HttpRequest -> Bytes
 ```
 
 Utility functions:
