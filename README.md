@@ -57,14 +57,14 @@ Only host is required, other are optional.
 Main request and response functions:
 ``` Idris
 HttpResponse.toText : HttpResponse -> Text
-HttpResponse.toBytes   : HttpResponse -> Bytes
+HttpResponse.toBytes : HttpResponse -> Bytes
 HttpResponse.fromText : Text -> Optional HttpResponse
 HttpResponse.fromBytes : Bytes -> Optional HttpResponse
 
 HttpRequest.toText : HttpRequest -> Text
-HttpRequest.toBytes    : HttpRequest -> Bytes
+HttpRequest.toBytes : HttpRequest -> Bytes
 HttpRequest.fromText : Text -> Optional HttpRequest
-HttpRequest.fromBytes  : Bytes -> Optional HttpRequest
+HttpRequest.fromBytes : Bytes -> Optional HttpRequest
 ```
 
 Utility functions:
