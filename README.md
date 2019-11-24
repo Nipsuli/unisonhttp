@@ -9,6 +9,8 @@ Installation `pull https://github.com/Nipsuli/unisonhttp .http`
 
 Run example echo server with `ucm run .http.example.echo` and check http://localhost:8081/
 
+Run example client call against postman-echo.com `ucm run .http.example.postmanEchoGet`
+
 Status:
 * HttpResponse -DONE
 * HttpRequest -DONE
