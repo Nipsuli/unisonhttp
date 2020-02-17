@@ -14,8 +14,10 @@ Run example client call against postman-echo.com `ucm run .http.example.postmanE
 Status:
 * HttpResponse -DONE
 * HttpRequest -DONE
-* HttpServer -Simple server done, TODO: multi threaded server
-* HttpClient -Simple client done, TODO: figure out ssl
+* HttpServer -Simple server DONE
+* HttpClient -Simple client DONE
+* --> POC DONE
+* See plans for future from [here](https://github.com/Nipsuli/unisonhttp/issues/1)
 
 ## Types:
 ``` Idris
